@@ -1,5 +1,5 @@
 ﻿
-Partial Class gridview
+Partial Class Detailes
     Inherits System.Web.UI.Page
 
 End Class
