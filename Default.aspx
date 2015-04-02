@@ -4,11 +4,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    
+    <title>Wicked Easy Recipes</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    
 </head>
+
 <body>
+   <div class="header">
+        <h1>Wicked Easy Recipes</h1>
+
+    </div>
+
+    <h2>Using 5 Ingredients or Less!</h2>
+
+    <br />
+
     <form id="form1" runat="server">
-    <div>
+        <div class="auto-style1" style="text-align: center">
+        <a href="Default.aspx" style="color: red">Home</a>&nbsp; |&nbsp;
+        <a href="NewRecipe.aspx" style="color: red">New Recipe</a>&nbsp; |&nbsp;
+        <a href="AboutUs.aspx" style="color: red">About Us</a>&nbsp; |&nbsp;
+        <a href="ContactUs.aspx" style="color: red">Contact Us</a>&nbsp; |&nbsp
+            </div>
+       
+   <div style=" padding: 20px;
+    margin-top:30px;    
+    text-align:center;
+  
+  
+    background-color:coral;
+    color:White;
+    padding:15px;
+    align-content:center"> 
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:jimmy_HW6_recipes %>" DeleteCommand="DELETE FROM [AMQuick_HW6] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [AMQuick_HW6] ([recipeName], [submittedBy], [ingredient1], [ingredient2], [ingredient3], [ingredient4], [ingredient5], [preparation], [notes]) VALUES (@recipeName, @submittedBy, @ingredient1, @ingredient2, @ingredient3, @ingredient4, @ingredient5, @preparation, @notes)" SelectCommand="SELECT * FROM [AMQuick_HW6]" UpdateCommand="UPDATE [AMQuick_HW6] SET [recipeName] = @recipeName, [submittedBy] = @submittedBy, [ingredient1] = @ingredient1, [ingredient2] = @ingredient2, [ingredient3] = @ingredient3, [ingredient4] = @ingredient4, [ingredient5] = @ingredient5, [preparation] = @preparation, [notes] = @notes WHERE [recipeID] = @recipeID">
             <DeleteParameters>
@@ -39,7 +67,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     
-    </div>
+    
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:BoundField DataField="recipeName" HeaderText="recipe Name" SortExpression="recipeName" />
@@ -48,6 +76,14 @@
             </Columns>
         </asp:GridView>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Newrecipe.aspx">Add a new recipe!</asp:HyperLink>
-    </form>
+    
+
+   </div>
+     </form>
+            <div id="footer">
+                &copy; 2015. MSCI:3300 Software Design & Development
+            </div>
+      
+    
 </body>
 </html>

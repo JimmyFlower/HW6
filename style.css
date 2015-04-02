@@ -1,0 +1,70 @@
+﻿
+
+body {
+    font-family:Futura, “Trebuchet MS”, Arial, sans-serif;
+    background-color:tan;
+}
+
+
+
+#form1 {
+    background-color: yellow;
+    color:silver;
+    padding: 15px;
+   
+    text-align:center;  align-content:center; 
+}
+
+
+
+p {   text-align: left; 
+    color:black;
+   
+
+   
+
+}
+
+#form2 {;
+}
+
+#footer {
+    text-align:center;
+    font-weight:300;
+    margin-top:15px;
+    clear:both;
+    color:white;
+    background-color:coral;
+}
+
+h1 {
+    font-size:1.8em;
+    padding:0;
+    margin:0;
+    color:#FFFFFF; 
+     text-align: center;
+}
+
+h2 {
+     text-align: center;
+    font-size:1.4em;
+    font-weight:300;
+    padding:0;
+    margin:0;
+    color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+.textbox {
+    border:1px solid lightgray;
+    width:380px;
+background-color:pink;
+color:#f08080;
+}
+
